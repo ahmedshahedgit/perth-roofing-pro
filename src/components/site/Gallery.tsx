@@ -103,15 +103,16 @@ export function Gallery() {
           </button>
           <figure className="max-h-full w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <img
-              src={galleryProjects[index].src}
-              alt={galleryProjects[index].title}
+              src={galleryProjects[index]!.src}
+              alt={galleryProjects[index]!.title}
               className="max-h-[76vh] w-full object-contain"
             />
             <figcaption className="mt-4 text-center font-display text-sm uppercase tracking-[0.2em] text-on-dark">
-              {galleryProjects[index].title}
-              <span className="ml-3 text-metal-bright">{galleryProjects[index].location}</span>
+              {galleryProjects[index]!.title}
+              <span className="ml-3 text-metal-bright">{galleryProjects[index]!.location}</span>
             </figcaption>
           </figure>
+
         </div>
       )}
     </>
